@@ -11,7 +11,8 @@ module.exports = {
     }
   },
   plugins: [
-    'ember'
+    'ember',
+    'hbs',
   ],
   extends: [
     'eslint:recommended',
@@ -21,6 +22,7 @@ module.exports = {
     browser: true
   },
   rules: {
+    'hbs/check-hbs-template-literals': 'error',
     'ember/no-jquery': 'error'
   },
   overrides: [
